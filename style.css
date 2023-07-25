@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Anton;
+    src: url(./Anton-Regular.ttf);
+}
+@font-face {
+    font-family: PP mori;
+    src: url(./PPMori-Regular.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: PP mori;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-color: #F7E3FE;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    border-radius: 50px;
+    border-radius: 2vw;
+    height: 88vh;
+    width: 94vw;
+    background-color: #FFF;
+}
+nav{
+    padding: 3vw 6vw;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1{
+    font-size: 2vw;
+    font-family: anton;
+    font-weight: 200;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 3.5vw;
+    color: rgb(78, 78, 78);
+}
+.nav2 h4{
+    font-size: .8vw;
+    font-weight: 900;
+}
+.nav3{
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+}
+.nav3 h4{
+    color: rgb(78, 78, 78);
+    font-size: .8vw;
+    font-weight: 900;
+}
+.nav3 button{
+    padding: .8vw 2vw;
+    border-radius: 50px;
+    border: transparent;
+    background-color: #735DFE;
+    color: #FFF;
+    font-size: .8vw;
+}
+.sammary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.left{
+    height: 80vh;
+    width: 45%;
+    padding: 2vw 4vw;
+    /* background-color: rgb(0, 0, 0); */
+}
+.right{
+    background-image: url('./WhatsApp\ Image\ 2023-07-25\ at\ 17.49.0132\ \(1\).jpg');
+    /* background-color: black; */
+    height: 72vh;
+    width: 50%;
+    overflow: hidden;
+    object-fit: fill;
+    padding: 2vw 15vw;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.left h3{
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin-top: 3vw;
+    color: #735DFE;
+}
+.left h1{
+    font-size: 5vw;
+    font-weight: 100;
+    /* margin-top: 1vw; */
+    line-height: 6vw;
+    font-family: Anton;
+    /* color: #735DFE; */
+}
+.left p{
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 5vw;
+    line-height: 1vw;
+    color: rgb(98, 98, 98);
+}
+.playbutton{
+    margin-top: 1.4vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+.playbutton button{
+    color: #fff;
+    background-color: #735DFE;
+    padding: .8vw 2vw;
+    border-radius: 50px;
+    border: transparent;
+    font-size: .8vw;
+}
+.playbutton i{
+    font-size: 2.5vw;
+    color: #735DFE;
+}
+@media (max-width:600px) {
+    .cont{
+        height: 92vh;
+        width: 90vw;
+        border-radius: 15px;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+    }
+    .left{
+        width: 90vw;
+        height: 46vh;
+        position: absolute;
+        top: 0%;
+        padding-top: 9vh;
+        padding-left: 6vw;
+    }
+    .left h3{
+        font-size: 5vw;
+    }
+    .left h1{
+        font-size: 13vw;
+        line-height: 14vw;
+    }
+    .left p{
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-top: 1%;
+    }
+    .playbutton{
+        margin-top: 6vw;
+    }
+    .playbutton button{
+        padding: 3vw 4vw;
+        font-size: 2vw;
+    }
+    .playbutton i{
+        font-size: 8vw;
+        font-weight: 100;
+    }
+    .right{
+        width: 90vw;
+        height: 46vh;
+        position: absolute;
+        bottom: 0%;
+    }
+    nav{
+        padding: 9vw 6vw;
+    }
+    nav h1{
+        font-size: 5vw;
+    }
+    .nav2 h4{
+        font-size: 2vw;
+    }
+    .nav3{
+        display: none;
+    }
+}
